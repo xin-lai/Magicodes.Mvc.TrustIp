@@ -40,7 +40,7 @@ namespace Magicodes.Mvc.TrustIp
                 .Select(IPAddress.Parse).ToList();
 
             //检查是否配置了任意IP(0.0.0.0)
-            if (ipAddresses.Any(p => p.Equals(IPAddress.Any)))
+            if (ipAddresses.Any(p => IPAddress.Any.Equals(p)))
             {
                 AllowAnyIp = true;
                 _logger.LogWarning(
