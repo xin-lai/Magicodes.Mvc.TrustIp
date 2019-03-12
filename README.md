@@ -1,6 +1,13 @@
 # Magicodes.Mvc.TrustIp
 基于ASP.NET Core的筛选器和中间件打造的通用授信IP通用库,支持筛选器和中间件配置,支持全局和局部使用.
 
+## Nuget
+
+| 名称     |      Nuget      | 
+|----------|:-------------:|
+| Magicodes.Mvc.TrustIp  |  [![NuGet](https://buildstats.info/nuget/Magicodes.Mvc.TrustIp)](https://www.nuget.org/packages/Magicodes.Mvc.TrustIp) |
+
+
 ## VNext
 
 * 黑名单
