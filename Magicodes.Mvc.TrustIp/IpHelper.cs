@@ -65,7 +65,7 @@ namespace Magicodes.Mvc.TrustIp
             var bytes = iPAddress.GetAddressBytes();
             if (!TrustIplist.Any(p => p.SequenceEqual(bytes)))
             {
-                _logger.LogInformation(
+                _logger.LogWarning(
                     $"服务器拒绝了该IP的请求: {iPAddress}");
                 return false;
             }

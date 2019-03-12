@@ -32,8 +32,6 @@ namespace Magicodes.Mvc.TrustIp
                 await _next.Invoke(context);
                 return;
             }
-            _logger.LogWarning(
-                $"服务器拒绝了该IP的请求: {remoteIp}");
             context.Response.StatusCode = (int)HttpStatusCode.Forbidden;
         }
     }

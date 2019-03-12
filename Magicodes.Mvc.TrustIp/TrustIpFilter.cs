@@ -34,9 +34,6 @@ namespace Magicodes.Mvc.TrustIp
                 base.OnActionExecuting(context);
                 return;
             }
-            _logger.LogWarning(
-                $"服务器拒绝了该IP的请求: {context.HttpContext.Connection.RemoteIpAddress}");
-
             context.Result = new StatusCodeResult(403);
         }
     }
