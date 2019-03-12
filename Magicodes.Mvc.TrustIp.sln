@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.Mvc.TrustIp", "Magicodes.Mvc.TrustIp\Magicodes.Mvc.TrustIp.csproj", "{FDC3AA28-42CD-4F22-BF68-B43FA34D59B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Test", "Web.Test\Web.Test.csproj", "{95CBF5BF-8121-41AE-848A-DF0B0A923E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC3AA28-42CD-4F22-BF68-B43FA34D59B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC3AA28-42CD-4F22-BF68-B43FA34D59B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC3AA28-42CD-4F22-BF68-B43FA34D59B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC3AA28-42CD-4F22-BF68-B43FA34D59B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CBF5BF-8121-41AE-848A-DF0B0A923E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CBF5BF-8121-41AE-848A-DF0B0A923E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CBF5BF-8121-41AE-848A-DF0B0A923E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CBF5BF-8121-41AE-848A-DF0B0A923E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3213DE58-0CEA-4183-A0CB-F95488AEDA7F}
+	EndGlobalSection
+EndGlobal
