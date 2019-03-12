@@ -9,6 +9,13 @@ namespace Magicodes.Mvc.TrustIp
 {
     public static class Extensions
     {
+        /// <summary>
+        /// 启用授信IP
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="loggerFactory"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static IApplicationBuilder UseTrustIP(this IApplicationBuilder app, ILoggerFactory loggerFactory, IConfiguration configuration)
         {
             if (app == null)
@@ -21,5 +28,12 @@ namespace Magicodes.Mvc.TrustIp
             return app.UseMiddleware<TrustIPMiddleware>(logger);
         }
 
+
+        public static HashSet<T> ToHashSet<T>(
+            this IEnumerable<T> source,
+            IEqualityComparer<T> comparer = null)
+        {
+            return new HashSet<T>(source, comparer);
+        }
     }
 }
