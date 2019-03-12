@@ -8,7 +8,7 @@ namespace Magicodes.Mvc.TrustIp
 {
     public static class IPHelper
     {
-        public static HashSet<byte[]> TrustIplist;
+        public static List<byte[]> TrustIplist;
 
         public static bool AllowAnyIp = false;
 
@@ -48,7 +48,7 @@ namespace Magicodes.Mvc.TrustIp
                 return;
             }
             //获取字节列表
-            TrustIplist = ipAddresses.Select(p => p.GetAddressBytes()).ToHashSet<byte[]>();
+            TrustIplist = ipAddresses.Select(p => p.GetAddressBytes()).ToList<byte[]>();
         }
 
         /// <summary>

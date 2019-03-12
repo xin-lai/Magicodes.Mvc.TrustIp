@@ -1,10 +1,12 @@
-﻿using Magicodes.Mvc.TrustIp;
+﻿using System.Collections.Generic;
+using Magicodes.Mvc.TrustIp;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace Web.Test
 {
@@ -29,7 +31,7 @@ namespace Web.Test
                 app.UseDeveloperExceptionPage();
             }
             //app.UseTrustIP(loggerFactory, Configuration);
-
+            
             app.UseStaticFiles();
             app.UseMvc();
         }
